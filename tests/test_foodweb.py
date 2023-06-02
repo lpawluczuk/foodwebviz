@@ -43,6 +43,7 @@ def test_get_graph(food_web, processed_node_df):
 
 def test_get_normalized_flows(food_web):
     normalized_weights = {
+        'linear': [3.0, 2.0, 2.0, 5.0],
         'tst': [0.25, 0.16666666666666666, 0.16666666666666666, 0.4166666666666667],
         'donor_control': [3.0, 2.0, 0.6666666666666666, 1.0],
         'predator_control': [1.0, 0.4, 0.4, 1.6666666666666667],
